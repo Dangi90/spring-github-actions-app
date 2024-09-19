@@ -19,9 +19,7 @@ public class SpringGithubActionsAppApplication {
 
     @Value("${app.version}")
     private String appVersion;
-
-
-
+    
     @GetMapping(value = {"/", "/index"})
     public String index(){
         return appName + " " + appVersion;
